@@ -1,7 +1,7 @@
 #include "monty.h"
 
-/** _pop - removes the top element of the stack
- *
+/**
+ * _pop - removes the top element of the stack
  * @stack: double pointer
  * @line_number: line number of opcode
  */
