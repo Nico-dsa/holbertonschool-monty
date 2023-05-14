@@ -1,5 +1,11 @@
 #include "monty.h"
 
+/** _push - pushes an element to the stack.
+ * @stack: double pointer
+ * @line_number: line number of opcode
+ *
+ */
+
 void _push(stack_t **stack, unsigned int line_number)
 {
 	char *token;

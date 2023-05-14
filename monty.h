@@ -42,5 +42,6 @@ int main(int argc, char **argv);
 void _pall(stack_t **stack, unsigned int line_number);
 int _isdigit(const char *str);
 void _push(stack_t **stack, unsigned int line_number);
+void _pint(stack_t **stack, unsigned int line_number);
 
 #endif
