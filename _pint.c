@@ -1,9 +1,9 @@
 #include "monty.h"
 
-/** _pint - prints the value at the top of the stack
+/**
+ * _pint - prints the value at the top of the stack
  * @stack: double pointer
  * @line_number: line number of opcode
- *
  */
 
 void _pint(stack_t **stack, unsigned int line_number)
