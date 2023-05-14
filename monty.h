@@ -37,16 +37,10 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-typedef void(*get_op_func)(stack_t **stack, unsigned int line_number);
-
-void ex_error(stack_t **stack);
-void read_file(char *filename, stack_t **stack);
-char *parse_line(char *line);
+void get_func(char *opcode, stack_t **stack, unsigned int line_number);
 int main(int argc, char **argv);
-void free_dlistint(stack_t *head);
 void _pall(stack_t **stack, unsigned int line_number);
 int _isdigit(const char *str);
 void _push(stack_t **stack, unsigned int line_number);
-get_op_func get_func(char *str);
 
 #endif

@@ -10,13 +10,13 @@ void _push(stack_t **stack, unsigned int line_number)
 	if (token == NULL)
 	{
 		fprintf(stderr, "L%u: usage: push integer\n", line_number);
-		ex_error(stack);
+		exit(EXIT_FAILURE);
 	}
 
 	if (!_isdigit(token))
 	{
 		fprintf(stderr, "L%u: usage: push integer\n", line_number);
-		ex_error(stack);
+		exit(EXIT_FAILURE);
 	}
 
 	value = atoi(token);
@@ -26,7 +26,7 @@ void _push(stack_t **stack, unsigned int line_number)
 	if (new_node == NULL)
 	{
 		fprintf(stderr, "Error, malloc failed\n");
-		ex_error(stack);
+		exit(EXIT_FAILURE);
 	}
 
 	new_node->n = value;
